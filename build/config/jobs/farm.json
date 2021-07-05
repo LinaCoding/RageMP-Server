@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Iron Mine",
+        "locations": [
+            { "x": -1, "y": 1, "radius": 40 }
+        ],
+        "countMin": 1,
+        "countMax": 2,
+        "blip": 474,
+        "illegal": false
+    },
+    {
+        "name": "Copper Mine",
+        "locations": [
+            { "x": -1, "y": 1, "radius": 40 }
+        ],
+        "countMin": 1,
+        "countMax": 2,
+        "blip": 474,
+        "illegal": false
+    },
+    {
+        "name": "Grapes plantage",
+        "locations": [
+            { "x": -102, "y": 1909, "radius": 40 },
+            { "x": -1830, "y": 2213, "radius": 100 }
+        ],
+        "countMin": 1,
+        "countMax": 2,
+        "blip": 570,
+        "illegal": false
+    }
+]
