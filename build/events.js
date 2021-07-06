@@ -40,10 +40,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var startup_1 = __importDefault(require("./handlers/startup"));
+var dynamicWeather_1 = __importDefault(require("./handlers/dynamicWeather"));
 exports.default = (function () {
     mp.events.add("packagesLoaded", function () { return __awaiter(void 0, void 0, void 0, function () {
         return __generator(this, function (_a) {
             startup_1.default();
+            dynamicWeather_1.default();
+            console.log("Loaded!");
             return [2 /*return*/];
         });
     }); });

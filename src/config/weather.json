@@ -1,0 +1,103 @@
+[
+    {
+        "currentWeather": "EXTRASUNNY",
+        "minTime": 180,
+        "maxTime": 360,
+        "initalChance": 0.1,
+        "nextWeather": [
+            { "weather": "EXTRASUNNY", "chance": 0.4 },
+            { "weather": "CLEAR", "chance": 0.4 },
+            { "weather": "CLOUDS", "chance": 0.2 }
+        ]
+    }, {
+        "currentWeather": "CLEAR",
+        "minTime": 180,
+        "maxTime": 360,
+        "initalChance": 0.5,
+        "nextWeather": [
+            { "weather": "CLEAR", "chance": 0.4 },
+            { "weather": "EXTRASUNNY", "chance": 0.3 },
+            { "weather": "CLOUDS", "chance": 0.3 }
+        ]
+    }, {
+        "currentWeather": "CLOUDS",
+        "minTime": 180,
+        "maxTime": 360,
+        "initalChance": 0.1,
+        "nextWeather": [
+            { "weather": "CLOUDS", "chance": 0.4 },
+            { "weather": "CLEAR", "chance": 0.2 },
+            { "weather": "SMOG", "chance": 0.2 },
+            { "weather": "RAIN", "chance": 0.2 }
+        ]
+    }, {
+        "currentWeather": "SMOG",
+        "minTime": 180,
+        "maxTime": 360,
+        "initalChance": 0.1,
+        "nextWeather": [
+            { "weather": "SMOG", "chance": 0.4 },
+            { "weather": "CLOUDS", "chance": 0.2 },
+            { "weather": "FOGGY", "chance": 0.2 },
+            { "weather": "CLEAR", "chance": 0.2 }
+        ]
+    }, {
+        "currentWeather": "FOGGY",
+        "minTime": 180,
+        "maxTime": 360,
+        "initalChance": 0.1,
+        "nextWeather": [
+            { "weather": "FOGGY", "chance": 0.2 },
+            { "weather": "CLOUDS", "chance": 0.2 },
+            { "weather": "SMOG", "chance": 0.2 },
+            { "weather": "OVERCAST", "chance": 0.2 },
+            { "weather": "RAIN", "chance": 0.2 }
+        ]
+    },
+    {
+        "currentWeather": "OVERCAST",
+        "minTime": 180,
+        "maxTime": 360,
+        "initalChance": 0.1,
+        "nextWeather": [
+            { "weather": "OVERCAST", "chance": 0.3 },
+            { "weather": "CLOUDS", "chance": 0.2 },
+            { "weather": "RAIN", "chance": 0.2 },
+            { "weather": "FOGGY", "chance": 0.2 },
+            { "weather": "THUNDER", "chance": 0.1 }
+        ]
+    }, {
+        "currentWeather": "RAIN",
+        "minTime": 180,
+        "maxTime": 360,
+        "initalChance": 0,
+        "nextWeather": [
+            { "weather": "RAIN", "chance": 0.2 },
+            { "weather": "CLOUDS", "chance": 0.2 },
+            { "weather": "SMOG", "chance": 0.2 },
+            { "weather": "OVERCAST", "chance": 0.2 },
+            { "weather": "RAIN", "chance": 0.2 }
+        ]
+    }, {
+        "currentWeather": "THUNDER",
+        "minTime": 180,
+        "maxTime": 360,
+        "initalChance": 0,
+        "nextWeather": [
+            { "weather": "THUNDER", "chance": 0.2 },
+            { "weather": "RAIN", "chance": 0.2 },
+            { "weather": "CLEARING", "chance": 0.4 },
+            { "weather": "OVERCAST", "chance": 0.2 }
+        ]
+    }, {
+        "currentWeather": "CLEARING",
+        "minTime": 180,
+        "maxTime": 360,
+        "initalChance": 0,
+        "nextWeather": [
+            { "weather": "CLEARING", "chance": 0.4 },
+            { "weather": "CLEAR", "chance": 0.3 },
+            { "weather": "CLOUDS", "chance": 0.3 }
+        ]
+    }
+]
