@@ -5,7 +5,6 @@ export default () => {
     mp.events.add("packagesLoaded", async () => {
         handleStartup();
         dynamicWeather();
-        console.log("Loaded!");
     });
     
     mp.events.add(RageEnums.EventKey.PLAYER_ENTER_COLSHAPE, (player: PlayerMp, colshape: ColshapeMp) => {

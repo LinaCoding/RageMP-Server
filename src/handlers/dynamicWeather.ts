@@ -14,7 +14,7 @@ function selectWeather(list : WeatherChance[]) {
     for(let i = 0; i < list.length; i++) {
         tmp += list[i].chance;
         if(tmp > random) {
-            return config[i];
+            return config[config.findIndex(x => x.currentWeather === list[i].weather)];
         }
     }
 
@@ -37,7 +37,7 @@ export default () => {
     //Function to change the weather in an interval
     const changeWeather = () => {
         clearInterval(weatherInterval);
-
+        
         //Replace the old weather with a new one and update the interval
         const newWeather = selectWeather(currWeather.nextWeather);
         const time = getRandom(newWeather.minTime, newWeather.maxTime);

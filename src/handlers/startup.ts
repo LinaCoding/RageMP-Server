@@ -1,7 +1,6 @@
 import farms from '../config/jobs/farm.json';
 
 export default () => {
-    mp.world.weather = RageEnums.Weather.XMAS;
     mp.blips.new(60, new mp.Vector3(446, -983, 0));
 
     farms.forEach(job => {
