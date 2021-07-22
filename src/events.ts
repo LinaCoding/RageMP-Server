@@ -1,5 +1,6 @@
 import handleStartup from "./handlers/startup";
 import dynamicWeather from "./handlers/dynamicWeather";
+import { loadEquip, welcomePlayer } from "./handlers/playerJoin";
 
 export default () => {
     mp.events.add("packagesLoaded", async () => {
@@ -10,15 +11,13 @@ export default () => {
     mp.events.add(RageEnums.EventKey.PLAYER_ENTER_COLSHAPE, (player: PlayerMp, colshape: ColshapeMp) => {
         player.notify(`You entered ${colshape.data.info.name}`);
     });
+
+    mp.events.add(RageEnums.EventKey.PLAYER_JOIN, () => {
+        
+    });
     
     mp.events.add(RageEnums.EventKey.PLAYER_JOIN, async (player : PlayerMp) => {
-        /*const user = await UserModel.findOne({ userName: player.name });
-        
-        if(user) {
-            player.notify(`Wilkommen zurück ${player.name}!`);
-        } else {
-            const user = await UserModel.create({ userName: player.name, money: 100, level: 1 });
-            player.notify(`Wilkommen ${player.name}`);
-        }*/
+        await welcomePlayer(player);
+        loadEquip(player);
     });
 }
